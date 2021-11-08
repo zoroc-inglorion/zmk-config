@@ -52,16 +52,16 @@
 		lower_layer {
 // ------------------------------------------------------------------------------------------------------------
 // | BTCLR |  BT1   |   BT2   |    BT3  |  BT4 |  BT5 |                      |  F1  |  F2   |  F3   |  F4  |  F5   |  F6   |
-// |       |E.Pwr ON|E.Pwr OFF|E.Pwr TOG|      |      |                      |  F7  |  F8   |  F9   |  F10 |  F11  |  F12  |
-// |   `   |        |    ^    | QWERTY  |DVORAK|  %   |                      |  ^   |  &    |  *    |  (   |   )   |   ~   |
-// |       |   <-   |    v    |   ->    |      |      |      |       |       |      |  _    |  +    |  {   |   }   |  "|"  |
+// | HOME  |E.Pwr ON|E.Pwr OFF|E.Pwr TOG|      |      |                      |  F7  |  F8   |  F9   |  F10 |  F11  |  F12  |
+// |PAGE UP|PAGE DN |    ^    | QWERTY  |DVORAK|      |                      |  ^   |  &    |  *    |  (   |   )   |   ~   |
+// |  END  |   <-   |    v    |   ->    |      |      |      |       |       |      |  _    |  +    |  {   |   }   |  "|"  |
 //                            |         |      |      |      |       |       |      |       |       |
 			bindings = <
-&bt BT_CLR &bt BT_SEL 0     &bt BT_SEL 1      &bt BT_SEL 2      &bt BT_SEL 3 &bt BT_SEL 4                 &kp F1    &kp F2    &kp F3          &kp F4    &kp F5    &kp F6
-&trans     &ext_power EP_ON &ext_power EP_OFF &ext_power EP_TOG &trans       &trans                       &kp F7    &kp F8    &kp F9          &kp F10   &kp F11   &kp F12
-&kp GRAVE  &kp EXCL         &kp UP            &to 1             &to 0        &kp PRCNT                    &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR  &kp RPAR  &kp TILDE
-&trans     &kp LEFT         &kp DOWN          &kp RIGHT         &trans       &trans    &trans   &trans    &trans    &kp MINUS &kp KP_PLUS     &kp LBRC  &kp RBRC  &kp PIPE
-                                              &trans            &trans       &trans    &trans   &trans    &trans    &trans    &trans
+&bt BT_CLR &bt BT_SEL 0     &bt BT_SEL 1      &bt BT_SEL 2      &bt BT_SEL 3 &bt BT_SEL 4                   &kp F1    &kp F2    &kp F3          &kp F4    &kp F5    &kp F6
+&kp HOME   &ext_power EP_ON &ext_power EP_OFF &ext_power EP_TOG &trans       &trans                         &kp F7    &kp F8    &kp F9          &kp F10   &kp F11   &kp F12
+&kp PG_UP  &kp PG_DN        &kp UP            &to 1             &to 0        &trans                         &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR  &kp RPAR  &kp TILDE
+&kp END    &kp LEFT         &kp DOWN          &kp RIGHT         &trans       &trans      &trans   &trans    &trans    &kp MINUS &kp KP_PLUS     &kp LBRC  &kp RBRC  &kp PIPE
+                                              &trans            &trans       &trans      &trans   &trans    &trans    &trans    &trans
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -69,17 +69,17 @@
 
 		raise_layer {
 // ------------------------------------------------------------------------------------------------------------
-// |       |     |     |      |      |      |                   |NUMLCK|       |       |  /   |   *   |       |
+// |       |     |     |      |      |      |                   |NUMLCK|       |       |  /   |   *   |  CALC |
 // |   `   |  1  |  2  |  3   |  4   |  5   |                   |  (   |   7   |   8   |  9   |   -   |       |
 // |   F1  |  F2 |  F3 |  F4  |  F5  |  F6  |                   |  )   |   4   |   5   |  6   |   +   |       |
 // |   F7  |  F8 |  F9 |  F10 |  F11 |  F12 |        |  |       |  0   |   1   |   2   |  3   |   .   |       |
 //                     |      |      |      |        |  |       |      |       |       |
 			bindings = <
-&trans    &trans &trans &trans  &trans  &trans                       &kp KP_NUMLOCK   &trans          &trans          &kp KP_DIVIDE     &kp KP_MULTIPLY  &kp K_CALC
-&kp GRAVE &kp N1 &kp N2 &kp N3  &kp N4  &kp N5                       &kp KP_LPAR      &kp KP_NUMBER_7 &kp KP_NUMBER_8 &kp KP_NUMBER_9   &kp KP_MINUS     &trans
-&kp F1    &kp F2 &kp F3 &kp F4  &kp F5  &kp F6                       &kp KP_RPAR      &kp KP_NUMBER_4 &kp KP_NUMBER_5 &kp KP_NUMBER_6   &kp KP_PLUS      &trans
-&kp F7    &kp F8 &kp F9 &kp F10 &kp F11 &kp F12   &trans   &trans    &kp KP_NUMBER_0  &kp KP_NUMBER_1 &kp KP_NUMBER_2 &kp KP_NUMBER_3   &kp KP_DOT       &trans
-                        &trans  &trans  &trans    &trans   &trans    &trans           &trans          &trans
+&trans    &trans &trans &trans  &trans  &trans                                    &kp KP_NUMLOCK   &trans          &trans          &kp KP_DIVIDE     &kp KP_MULTIPLY  &kp K_CALC
+&kp GRAVE &kp N1 &kp N2 &kp N3  &kp N4  &kp N5                                    &kp KP_LPAR      &kp KP_NUMBER_7 &kp KP_NUMBER_8 &kp KP_NUMBER_9   &kp KP_MINUS     &trans
+&kp F1    &kp F2 &kp F3 &kp F4  &kp F5  &kp F6                                    &kp KP_RPAR      &kp KP_NUMBER_4 &kp KP_NUMBER_5 &kp KP_NUMBER_6   &kp KP_PLUS      &trans
+&kp F7    &kp F8 &kp F9 &kp F10 &kp F11 &kp F12   &trans   &mt PSCRN RA(PSCRN)    &kp KP_NUMBER_0  &kp KP_NUMBER_1 &kp KP_NUMBER_2 &kp KP_NUMBER_3   &kp KP_DOT       &trans
+                        &trans  &trans  &trans    &trans   &trans                 &trans           &trans          &trans
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
