@@ -75,7 +75,7 @@
 // |   F7  |  F8 |  F9 |  F10 |  F11 |  F12 |        |  |PSCRN(Alt)|  0   |   1   |   2   |  3   |   .   |  "|"  |
 //                     |      |      |      |        |  |          |      |       |       |
 			bindings = <
-&trans    &trans &trans &trans  &trans  &trans                                    &kp KP_NUMLOCK   &trans          &trans          &kp KP_DIVIDE     &kp KP_MULTIPLY  &kp K_CALC
+&trans    &trans &trans &trans  &trans  &trans                                    &kp KP_NUMLOCK   &trans          &trans          &kp KP_DIVIDE     &kp KP_MULTIPLY  &kp C_AL_CALC
 &kp GRAVE &kp N1 &kp N2 &kp N3  &kp N4  &kp N5                                    &kp KP_LPAR      &kp KP_NUMBER_7 &kp KP_NUMBER_8 &kp KP_NUMBER_9   &kp KP_MINUS     &trans
 &kp F1    &kp F2 &kp F3 &kp F4  &kp F5  &kp F6                                    &kp KP_RPAR      &kp KP_NUMBER_4 &kp KP_NUMBER_5 &kp KP_NUMBER_6   &kp KP_PLUS      &kp BSLH
 &kp F7    &kp F8 &kp F9 &kp F10 &kp F11 &kp F12   &trans   &mt PSCRN RA(PSCRN)    &kp KP_NUMBER_0  &kp KP_NUMBER_1 &kp KP_NUMBER_2 &kp KP_NUMBER_3   &kp KP_DOT       &kp PIPE
