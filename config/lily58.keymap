@@ -53,8 +53,8 @@
 		lower_layer {
 // ------------------------------------------------------------------------------------------------------------
 // | BTCLR |  BT1   |   BT2   |    BT3  |  BT4 |  BT5 |                      |  F1  |  F2   |  F3   |  F4  |  F5   |  F6   |
-// | HOME  |E.Pwr ON|E.Pwr OFF|E.Pwr TOG|      |      |                      |  F7  |  F8   |  F9   |  F10 |  F11  |  F12  |
-// |PAGE UP|PAGE DN |    ^    | QWERTY  |DVORAK|      |                      |  ^   |  &    |  *    |  (   |   )   |   ~   |
+// | HOME  |E.Pwr ON|E.Pwr OFF|E.Pwr TOG|OUT_BT|OutUSB|                      |  F7  |  F8   |  F9   |  F10 |  F11  |  F12  |
+// |PAGE UP|PAGE DN |    ^    | QWERTY  |DVORAK|OutTOG|                      |  ^   |  &    |  *    |  (   |   )   |   ~   |
 // |  END  |   <-   |    v    |   ->    |      |      |      |       |       |      |  _    |  +    |  {   |   }   |  "|"  |
 //                            |         |      |      |      |       |       |      |       |       |
 			bindings = <
